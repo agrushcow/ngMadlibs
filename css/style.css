@@ -2,14 +2,14 @@
 @media screen and (min-width:320px) {
   .container {
     border:1px solid black;
-    height:36.5em;
+    height:37em;
     width:100%;
     font-family: 'Fjalla One';
   }
 
   header {
     border:1px solid black;
-    height:5em;
+    height:6em;
     width:100%;
   }
 
@@ -21,6 +21,7 @@
     background-position:center;
     background-repeat:no-repeat;
     background-size:contain;
+    border-right:1px solid black;
   }
 
   .title {
@@ -34,16 +35,16 @@
   }
 
   .input-field {
-    height:17.6em;
     width:100%;
-    border:1px solid black;
+    padding-top:1em;
+    padding-bottom:1em;
   }
 
   .input-field h3 {
     margin:0 auto;
     text-align: center;
     margin:0.5em 0;
-    font-size:0.9em;
+    font-size:1.05em;
   }
 
   .inputs {
@@ -51,18 +52,21 @@
     text-align:center;
     display:flex;
     flex-direction: column;
+    padding:0.5em 0;
   }
 
-  input {
+  .text-input {
     text-align:center;
     border:2px solid black;
-    margin-bottom:0.35em;
+    margin-bottom:0.55em;
     color:#A9BBD6;
+    padding:0.5em;
   }
 
   .content {
-    font-size:0.8em;
-    padding:1em;
+    font-size:1.1em;
+    padding:2em 1em;
+    text-align:center;
   } 
 
   .content span {
@@ -79,17 +83,47 @@
   .radio label {
     display:inline;
   }
+
+  .submit {
+    margin-top:0.5em;
+  }
+
+  .submit input {
+    width:10em;
+    padding:0.75em;
+    color:black;
+    text-align: center;
+  }
+
+  .gender-radios {
+    text-align:center;
+  }
 }
 
 @media screen and (min-width:339px) {
-  input {
+  .text-input {
     display:flex;
     margin:0 auto;
     margin-bottom:0.35em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .input-field {
     height:16.8em;
+  }
+
+  .gender-radios {
+    margin-bottom:1em;
+  }
+
+  .submit {
+    margin-top:0.75em;
+  }
+
+  .content {
+    font-size:1.2em;
   }
 }
 
@@ -104,6 +138,10 @@
     width:68%;
   }
 
+  header {
+    height:7.5em;
+  }
+
   .row {
     display:flex;
     flex-direction: row;
@@ -114,11 +152,15 @@
     height:13em;
   }
 
-  .inputs {
-    margin:0 0.75em;
+  .input-field h3 {
+    font-size:1.2em;
   }
 
-  input {
+  .inputs {
+    margin:1em 0 2em 0;
+  }
+
+  .text-input {
     flex-grow:1;
     flex-basis:20%;
     border:2px solid black;
@@ -131,7 +173,16 @@
   }
 
   .content {
+    font-size:1.3em;
+  }
+
+  .gender-radios label {
     font-size:1.1em;
+    margin-bottom:1.5em;
+  }
+
+  .submit {
+    margin-top:1em;
   }
 }
 
@@ -141,24 +192,37 @@
   }
 
   .content {
-    font-size:1em;
+    font-size:1.4em;
   }
 
   header {
-    height:6.8em;
+    height:8em;
   }
 
   .input-field h3 {
-    font-size:1em;
+    font-size:1.4em;
   }
+
+  .gender-radios label {
+    font-size:1.3em;
+  }
+
+  .row {
+    margin-bottom:0.5em;
+  }
+
 }
 
 @media screen and (min-width:860px) {
   .content {
-    font-size:1.25em;
+    font-size:1.5em;
   }
 
   .input-field h3 {
-    font-size:1.1em;
+    font-size:1.5em;
+  }
+
+  .gender-radios label {
+    font-size:1.4em;
   }
 }

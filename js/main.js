@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('myApp', ['ngMessages'])
     .controller('MyCtrl', function($scope) {
 
     	var male = ['he', 'him', 'his', 'male name'];
@@ -19,9 +19,12 @@ angular.module('myApp', [])
 	       }
     	}
     	$scope.changeGender();
+
+    	$scope.inputs = true;
+
+    	$scope.changeView = function() {
+    		if (myForm.$valid) {
+    			$scope.inputs = !$scope.inputs;
+    		}
+    	}
     });
-
-
-
-
-
